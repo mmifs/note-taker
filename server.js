@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
   //get notes.html
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './notes.html'));
+    res.sendFile(path.join(__dirname, './public/notes.html'));
   });
 
   //get notes
