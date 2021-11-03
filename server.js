@@ -6,6 +6,7 @@ const PORT = 3001;
 const fs = require('fs');
 const ds = require('fs');
 const { join } = require('path')
+const {v4: uuidv4} = require('uuid');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
@@ -39,16 +40,11 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) =>{
-  //req.body.id = notes.length+1
+  req.body.id = uuidv4();
   const note = createNewNote(req.body, notes);
-  //const newNote = req.body;
-  //console.log(newNote);
-  console.log(notes.length);
   res.json(note);
 })
 
 app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
   });
-
-  //console.log(notes);

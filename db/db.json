@@ -1,18 +1,7 @@
 [
-    {
-      "title": "Test Title1",
-      "text": "Test text1"
-    },
-    {
-      "title": "Test Title2",
-      "text": "Test text2"
-    },
-    {
-      "title": "Test Title3",
-      "text": "Test text3"
-    },
-    {
-      "title": "Test Title4",
-      "text": "Test text4"
-    }
+  {
+    "title": "My First Note",
+    "text": "My Text",
+    "id": "875cc12f-1074-4b25-b773-cfe6a669f953"
+  }
 ]
